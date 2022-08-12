@@ -5,7 +5,8 @@ print('Hello world')
 name = 'Tim'
 age = 12
 # i used the python casting method for the 'age'[Casting is changing the data type of a specific data]
-print(" Hello " + name + ",\n I am " + str(age) + ' years old')
+txt = ("Hello {}, and i am {} years old")# python format method[{} then the format()]
+print(txt.format(name,age))
 #this is a python toturial for beginners
 Name = "Ernest"
 print(Name.lower().islower())
@@ -31,11 +32,23 @@ print(sqrt(100))
 # name_detail = input('Enter your name: ')
 # print(name_detail)
 
-sentence = input('Enter your sentence: ')
-print(sentence)
-word_1 = input('Enter the word to replace: ')
-word_2 = input('Enter the word to replace it with: ')
-result = (sentence.replace(word_1,word_2))
-print(result)
+# sentence = input('Enter your sentence: ')
+# print(sentence)
+# word_1 = input('Enter the word to replace: ')
+# word_2 = input('Enter the word to replace it with: ')
+# result = (sentence.replace(word_1,word_2))
+# print(result)
 # for results in result:
 #     print(results)
+
+countries = ["United kingdom","Ghana","Nigeria","Australia","Kenya","Japan"]
+countries[0] = "United State"
+print(countries)
+# countries.append('France')
+# print(countries)
+# cities = ["Accra","Abuja","Rio","Cape Vade","New York"]
+
+# countries.extend(cities)
+
+# print(type(countries))
+
