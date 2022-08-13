@@ -43,7 +43,19 @@ print(sqrt(100))
 
 countries = ["United kingdom","Ghana","Nigeria","Australia","Kenya","Japan"]
 countries[0] = "United State"
+
+length = len(countries)
+print(length)
+
 print(countries)
+print(countries[-1])
+
+fruit = list(("Mango","Banana","Orange","Pear","Strawberry","Apple"))
+fruit_2 = fruit.copy()
+print(fruit_2)
+
+countries.extend(fruit)
+print(len(countries))
 # countries.append('France')
 # print(countries)
 # cities = ["Accra","Abuja","Rio","Cape Vade","New York"]
@@ -51,4 +63,12 @@ print(countries)
 # countries.extend(cities)
 
 # print(type(countries))
+
+#functions
+
+def greetings_function(name, age):
+  print("Hello " + name + " . You are " + str(age) + " years old.")
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+greetings_function(name, age)
 
