@@ -1,3 +1,4 @@
+from audioop import add
 from math import *
 
 
@@ -66,9 +67,76 @@ print(len(countries))
 
 #functions
 
-def greetings_function(name, age):
-  print("Hello " + name + " . You are " + str(age) + " years old.")
-name = input("Enter your name: ")
-age = input("Enter your age: ")
-greetings_function(name, age)
+# def greetings_function(name, age):
+#   print("Hello " + name + " . You are " + str(age) + " years old.")
+# name = input("Enter your name: ")
+# age = input("Enter your age: ")
+# greetings_function(name, age)
 
+
+# def add_numbers(num_1, num_2):
+#   return num_1 + num_2
+# num_1 = int(input("Enter your first number: "))
+# num_2 = int(input("Enter your second number: "))
+# print(add_numbers(num_1, num_2))
+
+ 
+
+# value = input("Enter your sentences: ")
+# print(len(value))
+
+# if len(value) < 10:
+#   print(value, " is less than ten")
+# else:
+#   print(value, " is more than ten")
+
+my_dict = {
+  'name': 'max',
+  'student': True,
+  'age': 20
+
+}
+print(my_dict["name"])
+
+i = 1
+
+while i < 10:
+  print(i * '*')
+  i += 1
+
+
+
+my_list = list(('so','go','lo','he','we'))
+for list in my_list:
+  print(list)
+
+my_detail = {
+  'name': 'Max',
+  'age': 20,
+  'sex': 'Male'
+}
+
+for detail in my_detail:
+  print(detail)
+
+
+
+#basic calculator
+
+num_1 = int(input("Enter first number: "))
+num_2 = int(input("Enter second number: "))
+operator = input("Enter operator(+, -, *, /, %): ")
+
+if operator == '+':
+  print(num_1 + num_2)
+elif operator == '-':
+  print(num_1 - num_2)
+elif operator == '/':
+  print(num_1 / num_2)
+elif operator == '%':
+  print(num_1 % num_2)
+elif operator == '*':
+  print(num_1 * num_2)
+
+else:
+  print("operator is invalid: ")
